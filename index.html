@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Style, Bootstrap CSS, Fonts -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>TP Noté MMI - JavaScript - Formulaire de contact</title>
+  </head>
+  <body>
+  
+  <div class="content">
+    
+    <div class="container">
+
+      
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          
+          <div class="row align-items-center">
+            <div class="col-lg-12 mb-5 mb-lg-0">
+
+              <h2 class="mb-5">Formulaire de<br>contact.</h2>
+              <!-- Ici, le formulaire avec les 4 champs et le bouton -->
+              <form class="form-example" id="form">
+                <div class="col-12">
+
+                  <div class="row">
+                    <input class="col-6 border-top-0 border-left-0 border-right-0 border-bottom py-2" type="text" name="prenom" id="prenom" placeholder="Prénom">
+                    <input class="col-6 border-top-0 border-left-0 border-right-0 border-bottom py-2" type="text" name="nom" id="nom" placeholder="Nom">
+                  </div>
+                  <div class="row">
+                    <input class="col-12 border-top-0 border-left-0 border-right-0 border-bottom py-2" type="email" name="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="row">
+                    <textarea class="border-top-0 border-left-0 border-right-0 border-bottom col-12 py-2" type="textarea" name="message" id="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="row">
+                    <input class="border-0 bg-danger text-light p-3" type="submit" id="submit" value="Envoyer le message">
+                  </div>
+
+                </div>
+
+            </form>
+
+            </div>
+            <div class="col-lg-12 ml-auto">
+              <h2 class="mb-5">Liste des<br>messages.</h2>
+              <table id="messages" class="full-width">
+                <!-- Ici, les messages sont affichés sous forme de liste -->
+              </table>
+            </div>
+          </div>
+        </div>  
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
